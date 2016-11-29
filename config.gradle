@@ -25,5 +25,5 @@ ext {
                minSdkVersion    : 14,
                targetSdkVersion : 22,
                versionCode      : 362,
-               versionName      : "2.6.2"]
+               versionName      : "1.0"]
 }

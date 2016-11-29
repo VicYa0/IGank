@@ -6,12 +6,11 @@
     <string name="title_activity_gank">GankActivity</string>
 
     <!--action-->
-    <string name="action_github_login">登录 GitHub 帐号</string>
     <string name="action_github_trending">今日 GitHub 热门</string>
     <string name="action_share">分享</string>
     <string name="action_refresh">刷新</string>
     <string name="action_copy_url">复制链接</string>
-    <string name="action_open_url">打开链接</string>
+    <string name="action_open_url">在浏览器中打开</string>
     <string name="action_settings">Settings</string>
 
     <!--tip-->

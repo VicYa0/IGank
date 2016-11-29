@@ -24,7 +24,7 @@ def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
 
-def keyStore = file('meizhi.keystore')
+def keyStore = file('igank.keystore')
 
 android {
 
@@ -62,7 +62,7 @@ android {
 
     signingConfigs {
         app1 {
-            storeFile file('meizhi.keystore')
+            storeFile file('igank.keystore')
             storePassword project.hasProperty('STOREPASS') ? STOREPASS : ''
             keyAlias project.hasProperty('KEYALIAS') ? KEYALIAS : ''
             keyPassword project.hasProperty('KEYPASS') ? KEYPASS : ''
@@ -94,7 +94,7 @@ android {
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                        def fileName = "Meizhi_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                        def fileName = "IGank_v${defaultConfig.versionName}_${releaseTime()}.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }
